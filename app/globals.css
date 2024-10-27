@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Add this in your global CSS or in the component's CSS module */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh; /* Full screen height */
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  height: 100vh; /* Full screen height for each section */
+}
